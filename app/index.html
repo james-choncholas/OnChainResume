@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Resume DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .section {
+      margin: 20px;
+    }
+    button {
+      padding: 5px 16px;
+      border-radius: 4px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="./javascripts/app.js"></script>
+  <script src="./javascripts/web3.js"></script>
+  <script src="./javascripts/truffle-contract.js"></script>
+</head>
+
+
+<body>
+  <h1>Resume DApp</h1>
+  <div class="section">
+    Contract deployed at: <span id="resumeAddress"></span>
+  </div>
+  <div class="section">
+    Owner: <input type="text" id="owner" />
+  </div>
+  <div class="section">
+    Resume: <input type="text" id="resumeAscii" />
+      <button class="btn btn-info btn-changeRes" type="button" data-id="0">Update Resume</button>
+      <span id="changeResumeResult"></span>
+  </div>
+
+</body>
+</html> 
